@@ -12,10 +12,10 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout deploy branch
+      - name: Checkout hk_push branch
         uses: actions/checkout@v2
         with:
-          ref: 'refs/heads/deploy'
+          ref: 'refs/heads/hk_push'
 
       - name: Heroku Deploy
         uses: akhileshns/heroku-deploy@v3.12.12
