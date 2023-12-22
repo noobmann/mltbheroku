@@ -6,16 +6,16 @@ on:
       branch:
         description: 'Branch to deploy'
         required: true
-        default: 'hk_push'
+        default: 'main'
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout hk_push branch
+      - name: Checkout main branch
         uses: actions/checkout@v2
         with:
-          ref: 'refs/heads/hk_push'
+          ref: 'refs/heads/main'
 
       - name: Heroku Deploy
         uses: akhileshns/heroku-deploy@v3.12.12
