@@ -28,13 +28,6 @@ from logging import (
 
 install()
 setdefaulttimeout(600)
-
-getLogger("qbittorrentapi").setLevel(INFO)
-getLogger("requests").setLevel(INFO)
-getLogger("urllib3").setLevel(INFO)
-getLogger("pyrogram").setLevel(ERROR)
-getLogger("httpx").setLevel(ERROR)
-
 botStartTime = time()
 
 basicConfig(
