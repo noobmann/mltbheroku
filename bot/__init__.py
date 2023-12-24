@@ -53,6 +53,7 @@ aria2_options = {}
 qbit_options = {}
 queued_dl = {}
 queued_up = {}
+bot_cache = {}
 non_queued_dl = set()
 non_queued_up = set()
 multi_tags = set()
