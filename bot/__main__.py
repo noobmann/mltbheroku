@@ -91,8 +91,8 @@ async def stats(_, message):
 
 async def start(client, message):
     buttons = ButtonMaker()
-    buttons.ubutton("Repo", "https://www.github.com/anasty17/mirror-leech-telegram-bot")
-    buttons.ubutton("Owner", "https://t.me/anas_tayyar")
+    buttons.ubutton("Update", "https://telegram.dog/TomenBots")
+    buttons.ubutton("Owner", "https://telegram.dog/BalapriyanBalusamy")
     reply_markup = buttons.build_menu(2)
     if await CustomFilters.authorized(client, message):
         start_string = f"""
@@ -103,7 +103,7 @@ Type /{BotCommands.HelpCommand} to get a list of available commands
     else:
         await sendMessage(
             message,
-            "You Are not authorized user! Deploy your own mirror-leech bot",
+            "You Are not authorized user! Contact Admin For Access",
             reply_markup,
         )
 
