@@ -34,6 +34,7 @@ from bot import (
     DATABASE_URL,
     QbInterval,
     INCOMPLETE_TASK_NOTIFIER,
+    bot_cache,
     scheduler,
 )
 from .modules import (
