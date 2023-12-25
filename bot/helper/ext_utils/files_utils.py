@@ -7,7 +7,7 @@ from subprocess import run as srun
 from sys import exit as sexit
 
 from .exceptions import NotSupportedExtractionArchive
-from bot import aria2, LOGGER, DOWNLOAD_DIR, get_client
+from bot import aria2, LOGGER, DOWNLOAD_DIR, get_client, bot_cache
 from bot.helper.ext_utils.bot_utils import sync_to_async, async_to_sync, cmd_exec
 
 ARCH_EXT = [
