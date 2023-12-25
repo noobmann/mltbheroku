@@ -705,7 +705,7 @@ bot.add_handler(
 bot.add_handler(
     MessageHandler(
         user_settings,
-        filters=command(BotCommands.UserSetCommand) & CustomFilters.authorized,
+        filters=command(BotCommands.UserSetCommand)
     )
 )
 bot.add_handler(CallbackQueryHandler(edit_user_settings, filters=regex("^userset")))
