@@ -144,7 +144,7 @@ OSDS: {get_readable_file_size(seed_speed)}/s
 bot.add_handler(
     MessageHandler(
         mirror_status,
-        filters=command(BotCommands.StatusCommand) & CustomFilters.authorized,
+        filters=command(BotCommands.StatusCommand)
     )
 )
 bot.add_handler(CallbackQueryHandler(status_pages, filters=regex("^status")))
