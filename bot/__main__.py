@@ -248,18 +248,18 @@ async def main():
     )
     bot.add_handler(
         MessageHandler(
-            ping, filters=command(BotCommands.PingCommand) & CustomFilters.authorized
+            ping, filters=command(BotCommands.PingCommand)
         )
     )
     bot.add_handler(
         MessageHandler(
             bot_help,
-            filters=command(BotCommands.HelpCommand) & CustomFilters.authorized,
+            filters=command(BotCommands.HelpCommand)
         )
     )
     bot.add_handler(
         MessageHandler(
-            stats, filters=command(BotCommands.StatsCommand) & CustomFilters.authorized
+            stats, filters=command(BotCommands.StatsCommand)
         )
     )
     LOGGER.info("Bot Started!")
