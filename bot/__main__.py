@@ -86,6 +86,7 @@ async def stats(_, message):
         f"<b>Memory Total:</b> {get_readable_file_size(memory.total)}\n"
         f"<b>Memory Free:</b> {get_readable_file_size(memory.available)}\n"
         f"<b>Memory Used:</b> {get_readable_file_size(memory.used)}\n"
+        f"<b>Power By @BalapriyanBalusamy</b>\n"
     )
     await sendMessage(message, stats)
 
@@ -104,7 +105,8 @@ Type /{BotCommands.HelpCommand} to get a list of available commands
     else:
         await sendMessage(
             message,
-            "You Are not authorized user! Contact Admin For Access",
+            """This bot can mirror all your links|files|torrents to Google Drive or any rclone cloud or to telegram.
+Type /{BotCommands.HelpCommand} to get a list of available commands""",
             reply_markup,
         )
 
@@ -171,6 +173,7 @@ NOTE: Try each command without any argument to see more detalis.
 /{BotCommands.ExecCommand}: Run Commands In Exec (Only Owner).
 /{BotCommands.ClearLocalsCommand}: Clear {BotCommands.EvalCommand} or {BotCommands.ExecCommand} locals (Only Owner).
 /{BotCommands.RssCommand}: RSS Menu.
+Power By @BalapriyanBalusamy
 """
 
 
