@@ -86,7 +86,6 @@ async def stats(_, message):
         f"<b>Memory Total:</b> {get_readable_file_size(memory.total)}\n"
         f"<b>Memory Free:</b> {get_readable_file_size(memory.available)}\n"
         f"<b>Memory Used:</b> {get_readable_file_size(memory.used)}\n"
-        f"<b>Power By @BalapriyanBalusamy</b>\n"
     )
     await sendMessage(message, stats)
 
@@ -173,7 +172,6 @@ NOTE: Try each command without any argument to see more detalis.
 /{BotCommands.ExecCommand}: Run Commands In Exec (Only Owner).
 /{BotCommands.ClearLocalsCommand}: Clear {BotCommands.EvalCommand} or {BotCommands.ExecCommand} locals (Only Owner).
 /{BotCommands.RssCommand}: RSS Menu.
-Power By @BalapriyanBalusamy
 """
 
 
