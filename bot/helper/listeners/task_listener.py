@@ -282,9 +282,8 @@ class TaskListener(TaskConfig):
                     and not self.privateLink
                 ):
                     remote, path = rclonePath.split(":", 1)
-                    url_path = rutils.quote(f'{path}')
-                    url_path = url_path.split('/',1)[1]
-                    share_url = f"{RCLONE_SERVE_URL}/{url_path}"
+                    url_path = rutils.quote(f"{path}")
+                    share_url = f"{RCLONE_SERVE_URL}/{remote}/{url_path}"
                     if mime_type == "Folder":
                         share_url += "/"
                     buttons.ubutton("🔗 Rclone Link", share_url)
